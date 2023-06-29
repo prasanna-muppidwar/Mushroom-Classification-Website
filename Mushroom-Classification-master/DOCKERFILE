@@ -1,0 +1,32 @@
+# Base image
+FROM python:3.9-slim
+
+# Set the working directory
+WORKDIR /app
+
+# Copy all the files to the container
+COPY . /app/
+
+# Install system dependencies
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends \
+    build-essential \
+    && rm -rf /var/lib/apt/lists/*
+
+# Create and activate the virtual environment
+RUN python -m venv /venv
+ENV PATH="/venv/bin:$PATH"
+RUN echo "source /venv/bin/activate" >> ~/.bashrc
+
+# Upgrade pip and install dependencies
+RUN pip install --no-cache-dir --upgrade pip && \
+    pip install --no-cache-dir -r requirements.txt
+
+# Expose the Flask app's port
+EXPOSE 5000
+
+# Set the environment variable for Flask
+ENV FLASK_APP=app.py
+
+# Run the Flask application
+CMD python app.py

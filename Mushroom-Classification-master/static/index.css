@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+:root{
+    --bg-color: #fefae0;
+    --primary-bg-color: #e9edc9;
+    --text-color: #283618;
+    --text-active: #606c38;
+    --button-color: #606c38;
+    --button-hover-bg-color: #dda15e;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--bg-color);
+    padding: 1.5rem;
+    line-height: 1.4;
+    color: var(--text-color);
+    accent-color:var(--text-color) ;
+}
+  
+h1 {
+    font-size: 2rem;
+    text-align: center;
+}
+p{
+    font-size: 20px;
+}
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+label {
+    display: flex; 
+    flex-basis: 40%;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+select {
+    background-color: var(--primary-bg-color);
+    flex-basis: 40%;
+    display: block;
+    font-weight: 400;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 1rem;
+    width: 100%;
+    color: var(--text-color);
+    box-sizing: border-box;
+}
+
+select:hover,
+section:focus{
+    color: var(--text-active);
+}
+
+.button{
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+}
+  
+button[type="submit"]:hover {
+    background-color: #45a049; 
+}
+
+option{
+    padding: 0 1.8rem;
+    background: var(--button-color);
+}
+
+input{
+    background-color: var(--primary-bg-color);
+    flex-basis: 40%;
+    display: block;
+    font-weight: 400;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-bottom: 1rem;
+    width: 100%;
+    color: var(--text-color);
+    box-sizing: border-box;
+}
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: start;
+  }
+  
+  .faq-list {
+    margin-top: 20px;
+  }
+  
+  .question {
+    font-weight: bold;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  
+  .answer {
+    margin-bottom: 10px;
+    display: none;
+  }
+  summary {
+    cursor: pointer;
+    outline: none;
+    padding: 10px 10px 10px 10px ;
+    background-color: var(--primary-bg-color);
+    border: 2px solid var(--bg-color);
+    border-radius: 8px;
+   
+  }
+
+  summary::-webkit-details-marker {
+    display: none;
+  }
+
+  summary::before {
+    width: 800px;
+    float: right;
+    margin-right: 5px;
+    transition: transform 0.2s;
+  }
+
+
+
+  details[open] summary {
+    background-color:var(--primary-bg-color);
+  }
+  

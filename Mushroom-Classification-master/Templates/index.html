@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>EdibleFungiFinder :Let's Identify Mushrooms Easily</title>
+    <link rel="stylesheet" type="text/css" href="/static/index.css">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <h1> &#127793 Mushroom Characteristics</h1>
+    <p>Easiest Way to Classify Mushrooms &#127793</p>
+    <form method="POST" action="/predict">
+      <label for="gill-size">Gill Size:</label>
+      <select id="gill-size" name="gill-size">
+        <option value="b">Broad</option>
+        <option value="n">Narrow</option>
+      </select>
+
+      <label for="gill-color">Gill Color:</label>
+      <select id="gill-color" name="gill-color">
+        <option value="k">Black</option>
+        <option value="n">Brown</option>
+        <option value="b">Buff</option>
+        <option value="h">Chocolate</option>
+        <option value="g">Gray</option>
+        <option value="r">Green</option>
+        <option value="o">Orange</option>
+        <option value="p">Pink</option>
+        <option value="u">Purple</option>
+        <option value="e">Red</option>
+        <option value="w">White</option>
+        <option value="y">Yellow</option>
+      </select>
+
+      <label for="stalk-root">Stalk Root:</label>
+      <select id="stalk-root" name="stalk-root">
+        <option value="b">Bulbous</option>
+        <option value="c">Club</option>
+        <option value="u">Cup</option>
+        <option value="e">Equal</option>
+        <option value="z">Rhizomorphs</option>
+        <option value="r">Rooted</option>
+      </select>
+
+      <label for="spore-print-color">Spore Print Color:</label>
+      <select id="spore-print-color" name="spore-print-color">
+        <option value="k">Black</option>
+        <option value="n">Brown</option>
+        <option value="b">Buff</option>
+        <option value="h">Chocolate</option>
+        <option value="r">Green</option>
+        <option value="o">Orange</option>
+        <option value="u">Purple</option>
+        <option value="w">White</option>
+        <option value="y">Yellow</option>
+      </select>
+
+      <label for="population">Population:</label>
+      <select id="population" name="population">
+        <option value="a">Abundant</option>
+        <option value="c">Clustered</option>
+        <option value="n">Numerous</option>
+        <option value="s">Scattered</option>
+        <option value="v">Several</option>
+        <option value="y">Solitary</option>
+      </select>
+
+      <div class="button">
+        <input type="submit" value="Predict"></input>
+      </div>
+    </form>
+
+    <section id="testimonial">
+      <div class="container">
+        <h1>Frequently Asked Questions!</h1>
+    <dl class="faq-list">
+      <details>
+        <summary style="font-size: 20px;">Gill Color</summary>
+        <p>Represents the color of the gills. The gill color can vary greatly among different mushroom species and is an important feature for identification purposes. It is usually described 
+          using terms such as white, brown, yellow, pink, or black.</p>
+      </details>
+      <details>
+        <summary style="font-size: 20px;">Gill Size</summary>
+        <p>Refers to the size of the gills, which are the thin, parallel structures found on the underside of the cap of a mushroom. The size of gills can vary, ranging from narrow to broad, and 
+          it is often used as a characteristic for mushroom identification.</p>
+      </details>
+      <details>
+        <summary style="font-size: 20px;">Stalk Root</summary>
+        <p>Refers to the root or base of the mushroom's stalk, also known as the stipe. The stalk root can have different shapes and structures, such as bulbous, tapered, or without a distinct root-like feature. It is one 
+          of the features used to classify mushrooms into different groups.</p>
+      </details>
+      <details>
+        <summary style="font-size: 20px;">Spore Print Color</summary>
+        <p>Describes the color of the spore print, which is the powder-like deposit produced by the mature mushroom's spores. Obtaining a spore print involves placing the cap of a mushroom on a piece of paper or glass and allowing the spores to drop and form a visible pattern. The spore print color can range from white to various shades of brown, 
+          black, purple, or other colors, depending on the mushroom species.</p>
+      </details>
+      <var><details>
+        <summary style="font-size: 20px;">Population</summary>
+        <p>Refers to the abundance or density of a particular mushroom species within a given area. Population size can vary from scarce or solitary individuals to large clusters or dense colonies. Studying the population of mushrooms helps in understanding 
+          their distribution patterns and ecological significance.</p>
+      </details></var>
+      </div>
+    </section>
+  </body>
+</html>
