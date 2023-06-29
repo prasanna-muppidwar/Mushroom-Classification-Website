@@ -38,7 +38,7 @@ b: <code>Scripts\activate</code>
 # Confusion Matrix
 Below is the confusion matrix for the decision tree model:
 
-<img src="Mushroom-Classification-master/ui.png" alt="Image 1 Description">
+<img src="Mushroom-Classification/blob/main/Mushroom-Classification-master/ui.png" alt="Image 1 Description">
 <br>
 <img src="images/image2.jpg" alt="Image 2 Description">
 
