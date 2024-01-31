@@ -1,4 +1,4 @@
-# Mushroom-Classification# 
+# Mushroom-Classification 
 
 This repository contains a machine learning model trained to classify mushrooms as edible or poisonous based on certain features. The model is implemented using a decision tree algorithm.
 
